@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weekNumbersToWords Function</title>
+</head>
+<body>
+
+    <p>Write a function called *weekNumberstoWords* with 
+        given input array of numbers 1-7 and 
+        outputs an array of the weeksdays written out, using a switch.
+    </p>
+
+    <p>Example:<br>
+        Input: [1,4,6,3,2]<br>
+        Output: ["Monday","Thursday","Saturday","Wednesday","Tuesday"]
+    </p>
+
+    <input type="button" value="Click me!" id="btn" onclick="weekNumberstoWords()">
+    <p id="result"></p>
+    
+</body>
+
+<script>
+    function weekNumberstoWords() {
+        let weekNum = [1, 4, 6, 3, 2];
+
+        switch(weekNum) {
+            case 0: 
+                day: 'Sunday';
+            case 1:
+                day: 'Monday';
+            case 2:
+                day: 'Tuesday';
+            case 3:
+                day: 'Wednesday';
+            case 4: 
+                day: 'Thursday';
+            case 5: 
+                day: 'Friday';
+            case 6: 
+                day: 'Saturday';
+            break;
+        }
+    }
+</script>
+</html>
